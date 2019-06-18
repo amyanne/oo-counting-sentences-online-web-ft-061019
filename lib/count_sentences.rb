@@ -19,7 +19,7 @@ if self.end_with?("?")
 end
   def exclamation?
     if self.end_with?("!")
-      true (?=\s|\z)/)
+      true 
     else 
     false 
   end
