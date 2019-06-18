@@ -25,10 +25,10 @@ end
   end
 end
   def count_sentences
-  self_array = self.split("")
+  self_array = self.split(" ")
   count_array = []
    self_array.each do |word|
-   if word.question? &&  || word.sentence? || word.exclamation?
+   if word.question? || word.sentence? || word.exclamation?
      count_array << word
    end
  end
