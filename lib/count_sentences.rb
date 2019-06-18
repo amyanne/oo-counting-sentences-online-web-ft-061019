@@ -40,6 +40,7 @@ end
    end
  end
    self_array.count
+   binding.pry
 end
 
 end
