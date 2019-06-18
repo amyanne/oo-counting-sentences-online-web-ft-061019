@@ -11,14 +11,14 @@ class String
     end
 
   def question?
-if self.end_with?("?" +(?=\s|\z)/))
+if self.end_with?("?" +(?=\s|\z)/)
       true 
     else 
     false 
   end
 end
   def exclamation?
-    if self.end_with?("!" + (?=\s|\z)/))
+    if self.end_with?("!" + (?=\s|\z)/)
       true 
     else 
     false 
