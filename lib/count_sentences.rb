@@ -34,14 +34,11 @@ end
 #   index += 1
 #   remove_extra = word
 # end
-binding.pry
    self_array.each do |word|
-   if word != "." || word != "!" || word != "?"
+   if word.question? || word.sentence? || word.exclamation?
      self_array.delete(word)
    end
  end
    self_array.count
-   binding.pry
 end
-
 end
