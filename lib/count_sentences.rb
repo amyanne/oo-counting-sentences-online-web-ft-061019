@@ -32,6 +32,6 @@ end
      count_array << word
    end
  end
-   self_array.count
+   count_array.count
 end
 end
