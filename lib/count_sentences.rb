@@ -34,6 +34,7 @@ end
 #   index += 1
 #   remove_extra = word
 # end
+binding.pry
    self_array.each do |word|
    if word != "." || word != "!" || word != "?"
      self_array.delete(word)
