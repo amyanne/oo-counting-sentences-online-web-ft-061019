@@ -26,17 +26,10 @@ end
 end
   def count_sentences
   self_array = self.split("")
-  remove_extra = String.new
-#   self_array.each_with_index do |word, index|
-#   if word == remove_extra
-#     self_array[index].pop
-#   end 
-#   index += 1
-#   remove_extra = word
-# end
+  count_array = []
    self_array.each do |word|
    if word.question? || word.sentence? || word.exclamation?
-     self_array.delete(word)
+     count_array << word
    end
  end
    self_array.count
