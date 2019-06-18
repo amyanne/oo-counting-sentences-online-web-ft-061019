@@ -27,7 +27,10 @@ end
   def count_sentences
   self_array = self.split("")
   count_array = []
+  repeat_check = String.new
    self_array.each do |word|
+   if word == repeat_check
+     self_array.pop
    if word.question? || word.sentence? || word.exclamation?
      count_array << word
    end
